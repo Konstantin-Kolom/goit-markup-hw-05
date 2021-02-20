@@ -1,0 +1,593 @@
+.body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  background-color: #FFFFFF
+}
+
+/* HEADER --------------------------------------------------------*/
+.header {
+  border: 1px solid #ECECEC
+}
+
+/* Стили логотипа */
+.logo {
+  color: var(--active-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-right: 93px;
+}
+
+.logo .logo-text {
+  color: var(--title-color);
+}
+
+/* Стили НАВИГАЦИЯ ---------------------------------------------*/
+.nav-link {
+  color: var(--title-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--active-color);
+}
+
+.nav-link.active {
+  color: var(--active-color);
+} 
+
+.contacts-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--active-color);
+}
+
+/* Геометрия и Сетка флекс НАВИГАЦИЯ */
+.header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  
+}
+
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu .nav-line {
+  margin-right: 50px;
+}
+
+.nav-menu .nav-line:last-child{
+  margin-right: 0px;
+}
+
+.contacts-line {
+  margin-left: 50px;
+}
+
+.contacts-line:first-child {
+  margin-left: 0px;
+}
+
+/* Фон и неконтентные картинки НАВИГАЦИЯ */
+.contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+ 
+/* MAIN*/
+/* Стили ГЕРОЙ----------------------------------------------------*/
+.section-hero {
+  background-color: var(--bg-hero);
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.title-hero {
+  color: var(--text-active-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order-button {
+  text-align: center;
+  display: inline-block;
+  color: var(--text-active-color);
+  background-color: var(--active-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+}   
+
+/* Фон и неконтентные картинки ГЕРОЙ*/
+.section-hero {
+  background-image: linear-gradient(to right, var(--hero-dg), var(--hero-dg)), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: 0  -150px;
+}
+
+/* Стили НАШИ ДОСТОИНСТВА ------------------------------------------*/
+.title-description {
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.text-description {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* Геометрия и Флекс сетка */
+
+.description-box {
+  display: inline-block;
+  margin-top: 94px
+}
+
+.description-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--description-marg-size));
+  margin-left: calc(-1 * var(--description-marg-size));
+}
+
+.description-item {
+  flex-basis: calc(100% / 4 - var(--description-marg-size));
+  margin-left: var(--description-marg-size);
+  margin-top: var(--description-marg-size);
+}
+
+
+/* Фон и неконтентные картинки */
+.icon-frame-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-frame-description);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  max-width: 270px;
+  max-height: 120px;
+}
+
+.description-item .icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/* Стили ЧЕМ ЗАНИМАЕМСЯ ------------------------------------------*/
+.work-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+/* Геометрия и Флекс сетка */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--work-marg-size));
+  margin-left: calc(-1 * var(--work-marg-size));
+}
+
+.work-line {
+  flex-basis: calc(100% / 3 - var(--work-marg-size));
+  margin-top: var(--work-marg-size);
+  margin-left: var(--work-marg-size); 
+}
+
+.work .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-box {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+/* Стили НАША КОМАНДА ----------------------------------------------*/
+.section-staff .container{
+  background-color: #F5F4FA;
+}
+
+.title-staff {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.employee-title {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  width: 270px;
+  height: 19px;
+  margin-top: 30px; 
+}
+
+.employee-position {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  width: 270px;
+  margin-top: 10px;
+}
+
+/* Геометрия и Флекс сетка НАША КОМАНДА*/
+.list-staff {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-marg-size));
+  margin-left: calc(-1 * var(--card-marg-size));
+}
+
+.li-staff {
+  flex-basis: calc(100% / 4 - var(--card-marg-size));
+  margin-left: var(--card-marg-size);
+  margin-top: var(--card-marg-size);
+}
+
+.section-staff > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.staff-card {
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow-staff);
+  
+}
+
+.staff-box {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+/* Фон и неконтентные картинки НАША КОМАНДА*/
+.icon-staff-box {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--bg-icon);
+}
+
+.icon-btn:hover,
+.icon-btn:focus {
+  background-color: var(--bg-icon-active);
+  color: var(--bg-frame-description);
+}
+
+.icon-staff {
+  fill: currentColor;
+}
+
+/*КЛИЕНТЫ--------------------------------------------------------*/
+.title-clients {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link-clients {
+  width: 168px;
+  height: 88px;
+}
+
+
+/* Геометрия и Флекс сетка КЛИЕНТЫ*/
+.box-clients {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.list-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  margin-top: calc(-1 * var(--clients-marg-size));
+  margin-left: calc(-1 * var(--clients-marg-size));
+}
+
+.item-clients {
+  display: flex;
+  justify-content: center;
+  flex-basis: calc(100% / 6 - var(--clients-marg-size));
+  margin-left: var(--clients-marg-size);
+  margin-top: var(--clients-marg-size);
+  padding: 0;
+}
+
+.link-clients {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--border-clients-color);
+  border-radius: 4px;
+  color: var(--border-clients-color);
+}
+
+.icon-clients {
+  fill: currentColor;
+}
+
+.link-clients:hover {
+  border-color: var(--bg-button-active);
+  color: var(--bg-button-active);
+}
+
+/* Стили FOOTER -----------------------------------------------------------*/
+.footer{
+  background-color: var(--bg-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer{
+  color: var(--text-active-color);
+}
+
+.footer .logo {
+  margin-right: 0;
+}
+
+.address-text {
+  color: var(--text-active-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.19;
+  margin-top: 20px;
+}
+
+.address-ul {
+  margin-top: ;
+}
+
+.footer-link {
+  display: block;
+  color: var(--link-color-footer);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 9px;
+}
+
+/* Фон и неконтентные картинки FOOTER*/
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-foter {
+  padding: 0;
+  margin-left: 70px;
+}
+
+.join-title {
+  color: var(--text-active-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;  
+}
+
+.list-join {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+/*-______________--*/
+.icon-footer {
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--bg-frame-description);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  background-color: var(--bg-icon-active);
+  color: var(--bg-frame-description);
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*Стилизация Кнопки - ПОРТФОЛИО*/
+.btn-link {
+  color: var(---button-color);
+  background-color: var(--bg-button);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: var(--text-active-color);
+  background-color: var(--active-color);
+  outline: none; 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-link.autofocus{
+  color: var(--button-color-active);
+  background-color: var(--bg-button-active);
+}
+
+/* Геометрия и Флекс сетка ПОРФОЛИО*/
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-filter {
+  margin-top: 94px;
+}
+
+.program-box {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.btn-line {
+  margin-right: 8px;
+}
+
+/*Стилизация Разработки - ПОРФОЛИО ------------------------------------------*/
+.program-title {
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  /* Геометрия */
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.program-type {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+
+  /* Геометрия */
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* Геометрия и Флекс сетка ПОРФОЛИО*/
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-marg-size));
+  margin-left: calc(-1 * var(--card-marg-size));
+}
+
+.program-item {
+  flex-basis: calc(100% / 3 - var(--card-marg-size));
+  margin-top: var(--card-marg-size);
+  margin-left: var(--card-marg-size);
+
+}
+
+.program-item:hover,
+.program-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.progpam-card {
+  padding-bottom: 20px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #EEEEEE;
+}
+
+
+/* --------------------------------------------------------------------------- */
