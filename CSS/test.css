@@ -1,0 +1,52 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 15px;
+  outline: 1px solid orange;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item:hover .menu-link{
+  background-color: violet;
+}
+
+.menu-link {
+  display: block;
+  padding: 15px;
+ 
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+}
+
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+
+  display: none;
+
+}
+
+.submenu-link {
+  display: block;
+  padding: 15px;
+  /* width: 100%; */
+    
+  /* text-decoration: none; */
+  background-color: rgb(166, 194, 194);
+  color: rgb(190, 22, 22);
+ 
+}
