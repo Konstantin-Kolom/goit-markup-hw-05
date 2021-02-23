@@ -115,11 +115,11 @@
 
 /* Псевдоэлементы и амимация НАВИГАЦИЯ */
 
-.nav-link {
+.nav-link.active {
   position: relative;
 }
 
-.nav-link::after {
+.nav-link.active::after {
   content: '';
 
   position: absolute;
@@ -132,17 +132,8 @@
   background-color: var(--bg-button-active);
   border-radius: 2px;
 
-  opacity: 0;
-  transition: opacity 250ms var(--cubic);
 }
 
-.nav-link.active::after {
-  opacity: 1;
-}
-
-.nav-link:hover:after {
-  opacity: 1;
-}
  
 /* MAIN*/
 /* Стили ГЕРОЙ----------------------------------------------------*/
@@ -236,7 +227,7 @@
   line-height: 1.71;
 }
 
-/* Геометрия и Флекс сетка */
+/* Геометрия и Флекс сетка НАШИ ДОСТОИНСТВА*/
 
 .description-box {
   display: inline-block;
@@ -257,7 +248,7 @@
 }
 
 
-/* Фон и неконтентные картинки */
+/* Фон и неконтентные картинки НАШИ ДОСТОИНСТВА*/
 .icon-frame-description {
   display: flex;
   align-items: center;
@@ -284,7 +275,7 @@
   text-align: center;
 }
 
-/* Геометрия и Флекс сетка */
+/* Геометрия и Флекс сетка ЧЕМ ЗАНИМАЕМСЯ*/
 .work-list {
   display: flex;
   flex-wrap: wrap;
@@ -306,6 +297,29 @@
 .work-box {
   display: inline-block;
   margin-top: 50px;
+}
+
+/* Псевдоэлементы и амимация ЧЕМ ЗАНИМАЕМСЯ*/
+
+.work-line {
+  position: relative;
+}
+
+.work-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-active-color);
+  background-color: var(--work-dg);
+  padding: 27px 0;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Стили НАША КОМАНДА ----------------------------------------------*/

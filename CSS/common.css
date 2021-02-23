@@ -31,7 +31,9 @@
   --hero-dg: #2F303A40;
   --backdrop-bg: rgba(0, 0, 0, 0.2);
   --modal-bg: #FFFFFF;
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1)
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --work-dg: rgba(47, 48, 58, 0.8);
  
 }
 
