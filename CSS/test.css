@@ -184,7 +184,7 @@
 
   /* opacity: 0; */
   transform: scaleX(0);
-  transition: transform 250ms var(--cubic);
+  transition: var(--animation);
 }
 
 .nav-link.active::after {

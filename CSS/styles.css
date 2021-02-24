@@ -206,8 +206,8 @@
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   padding: 15px;
 
   transform: translate(-50%, -50%);
@@ -557,6 +557,9 @@
 .icon-footer:focus {
   background-color: var(--bg-icon-active);
   color: var(--bg-frame-description);
+
+  transform: scaleX(0);
+  transition: var(--animation);
 }
 
 /* --------------------------------------------------------------------------- */
