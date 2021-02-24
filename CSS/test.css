@@ -182,9 +182,9 @@
   background-color: var(--bg-button-active);
   border-radius: 2px;
 
-  /* opacity: 0; */
+  opacity: 0;
   transform: scaleX(0);
-  transition: var(--animation);
+  transition: transform 250ms var(--cubic);
 }
 
 .nav-link.active::after {
