@@ -205,6 +205,10 @@
   height: 100%;
   
   background-color: var(--backdrop-bg);
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--time-cubic);
 }
 
 .backdrop.is-hidden {
@@ -212,10 +216,10 @@
   pointer-events: none;
 }
 
-.icon-contacts .modal {
-  width: 30px;
-  height: 30px;
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.4);
 }
+
 
 .modal {
   position: absolute;
@@ -224,14 +228,14 @@
 
   max-width: 528px;
   width: 100%;
-  height: 581px;
   max-height: 100vh;
   padding: 40px;
+  background-color: var(--modal-bg);
 
   overflow-y: auto;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) ;
+  transition: transform var(--time-cubic);
 
-  background-color: var(--modal-bg);
 }
 
 .modal-btn-close {
@@ -251,7 +255,6 @@
 }
 
 .icon-btn-close {
-  /* width: 11px; */
   height: 11px;
   fill: var(--button-color);
 
