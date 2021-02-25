@@ -8,7 +8,7 @@
 
 /* HEADER --------------------------------------------------------*/
 .header {
-  border: 1px solid #ECECEC
+  border-bottom: 1px solid #ECECEC;
 }
 
 /* Стили логотипа */
@@ -372,10 +372,6 @@
 }
 
 /* Стили НАША КОМАНДА ----------------------------------------------*/
-.section-staff .container{
-  background-color: #F5F4FA;
-}
-
 .title-staff {
   color: var(--title-color);
   font-weight: 700;
@@ -422,6 +418,13 @@
 .section-staff > .container {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-staff {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F5F4FA;;
 }
 
 .staff-card {
@@ -706,10 +709,6 @@
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow var(--time-cubic);
-}
-
-.progpam-card {
-   /* display: inline-block; */
 }
 
 .progpam-description {
